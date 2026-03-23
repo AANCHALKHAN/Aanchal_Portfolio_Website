@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aanchal | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">"
+</head>
+<body>
+
+<!-- Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<!-- Toast -->
+<div class="toast" id="toast">
+  <i class="fas fa-check-circle"></i>
+  <span id="toastMsg">Message sent successfully!</span>
+</div>
+
+<!-- ══════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════ -->
+<nav id="navbar">
+  <a href="#home" class="logo">A<span>.</span>aanchal</a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close-menu" onclick="toggleMenu()"><i class="fas fa-times"></i></button>
+  <a href="#home"       onclick="toggleMenu()">Home</a>
+  <a href="#about"      onclick="toggleMenu()">About Us</a>
+  <a href="#services"   onclick="toggleMenu()">Services</a>
+  <a href="#experience" onclick="toggleMenu()">Experience</a>
+  <a href="#certificates" onclick="toggleMenu()">Certificates</a>
+  <a href="#portfolio"  onclick="toggleMenu()">Portfolio</a>
+  <a href="#contact"    onclick="toggleMenu()">Contact</a>
+</div>
+
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<section id="home">
+  <div class="hero-bg-text">Aanchal</div>
+  <div class="hero-left">
+    <div class="hero-tag">Available for opportunities</div>
+    <h1 class="hero-name">
+      Creative<br><em>Designer &</em><br>Developer
+    </h1>
+    <p class="hero-desc">
+      Hi, I'm <strong>Aanchal</strong> — a passionate designer and developer crafting beautiful digital experiences that blend aesthetic elegance with functional excellence.
+    </p>
+    <div class="hero-btns">
+      <a href="#portfolio" class="btn-primary"><i class="fas fa-eye"></i> View Portfolio</a>
+      <a href="#contact"   class="btn-outline"><i class="fas fa-paper-plane"></i> Hire Me</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span>3+</span><p>Years Exp.</p></div>
+      <div class="hero-stat"><span>25+</span><p>Projects</p></div>
+      <div class="hero-stat"><span>4+</span><p>Certificates Achievements</p></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-photo-wrap">
+      <div class="hero-photo">
+        <div class="hero-photo-initials">A</div>
+         <img src="images/girl.jpg" alt="profile">
+        <div class="hero-photo-label">
+          <strong>Aanchal</strong>
+          <span>Designer · Developer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     ABOUT
+══════════════════════════════════════ -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-image reveal-left">
+      <div class="about-img-box">
+        <div class="about-img-box-inner">
+          <img src="images/img 8.png" alt="">
+        </div>
+      </div>
+      <div class="about-badge">
+        <strong>3+</strong>
+        <span>Years of Experience</span>
+      </div>
+    </div>
+    <div class="about-content reveal-right">
+      <div class="section-tag">About Me</div>
+      <h2 class="section-title">Designing <em>Stories</em> That Matter</h2>
+      <div class="section-divider"></div>
+      <p>I'm Aanchal, a multidisciplinary designer and front-end developer currently pursuing my degree in Creative Computing. I specialise in creating visually compelling digital products — from interactive web applications to innovative creative computing solutions.</p>
+      <p>My approach combines rigorous design thinking with technical precision. I believe that the best digital experiences are those that feel effortless — where complexity is hidden behind intuitive, beautiful interfaces.</p>
+      <p>When I'm not designing or coding, you'll find me exploring illustration, photography, or contributing to open-source communities.</p>
+      <div class="about-skills">
+        <span class="skill-tag">UI/UX Design</span>
+        <span class="skill-tag">HTML & CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Adobe XD</span>
+        <span class="skill-tag">Node.js</span>
+      
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SERVICES
+══════════════════════════════════════ -->
+<section id="services">
+  <div class="services-header reveal">
+    <div class="section-tag">What I Do</div>
+    <h2 class="section-title">My <em>Services</em></h2>
+    <div class="section-divider"></div>
+    <p style="color:var(--text-muted);max-width:500px;margin:0 auto;font-size:0.95rem;line-height:1.8">
+      I offer a range of creative and technical services designed to help you build a strong digital presence.
+    </p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-num">01</div>
+      <div class="service-icon"><i class="fas fa-pen-nib"></i></div>
+      <h3>UI/UX Design</h3>
+      <p>Creating user-centred interfaces with intuitive navigation, compelling visual hierarchy, and delightful micro-interactions that keep users engaged.</p>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.1s">
+      <div class="service-num">02</div>
+      <div class="service-icon"><i class="fas fa-code"></i></div>
+      <h3>Web Development</h3>
+      <p>Building responsive, high-performance websites and web apps using modern HTML, CSS, JavaScript, and React frameworks with clean, maintainable code.</p>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.2s">
+      <div class="service-num">03</div>
+      <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+      <h3>Mobile-First Design</h3>
+      <p>Designing and developing experiences that look and work beautifully across all screen sizes, from phones to ultra-wide desktops.</p>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.3s">
+      <div class="service-num">04</div>
+      <div class="service-icon"><i class="fas fa-palette"></i></div>
+      <h3>Machine Learning</h3>
+      <p>Working with data-driven models that can recognise patterns, make predictions, and improve over time. Projects may include data analysis, predictive systems, recommendation engines, and intelligent automation features.</p>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.4s">
+      <div class="service-num">05</div>
+      <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+      <h3> AI Chatbots</h3>
+      <p>Designing interactive chatbot systems that can communicate with users in real time. This includes conversation design, automated responses, customer support assistants, and chatbot integration with websites or applications for smoother user interaction.</p>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.5s">
+      <div class="service-num">06</div>
+      <div class="service-icon"><i class="fas fa-database"></i></div>
+      <h3>Backend & APIs</h3>
+      <p>Developing robust server-side logic, RESTful APIs, and database integrations that power your applications behind the scenes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     EXPERIENCE
+══════════════════════════════════════ -->
+<section id="experience">
+  <div class="reveal">
+    <div class="section-tag">My Journey</div>
+    <h2 class="section-title">Experience &amp; <em>Education</em></h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="exp-grid" style="margin-top:1rem">
+    <!-- Work -->
+    <div>
+      <div class="exp-col-title reveal"><i class="fas fa-briefcase"></i>Project Experience</div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2026</div>
+          <h4>Ice cream website platform</h4>
+          <h5>Tomorrow's Web</h5>
+          <p>Created a responsive ice cream website with an engaging design, product showcase, and user-friendly interface.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2025</div>
+          <h4>AI Chartbots</h4>
+          <h5>Emerging Technologies</h5>
+          <p>Developed a Recipe Finder chatbot that helps users discover recipes based on their preferences or ingredients.
+The chatbot interacts with users and suggests suitable recipes quickly and efficiently.</p>
+        </div>
+        <a href="https://dialogflow.cloud.google.com/#/agent/recipefinderbot-enlj/intents"></a>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2025</div>
+          <h4>Unity Hub Game</h4>
+          <h5>Game Development</h5>
+          <p>Developed a 2D game using Unity Hub with interactive gameplay and engaging level design.
+The game focuses on smooth player controls, obstacles, and an enjoyable gaming experience.</p>
+        </div>
+        <a href="https://www.youtube.com/watch?v=AOO-xxLxjfc"></a>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2023</div>
+          <h4>DVD Projects</h4>
+          <h5>Digital visual designs</h5>
+          <p>Designed digital visuals that combine creativity with modern design techniques.
+The projects highlight strong visual storytelling and engaging digital experiences.</p>
+        </div>
+        <a href="https://www.canva.com/design/DAGDV-yZyuc/aDITSXS4rsjxK-WFuHKUfw/edit"></a>
+        <a href="https://www.canva.com/design/DAF_SvsLiQU/tIz_HM7T8DFyQrRU_SF4zA/edit"></a>
+      </div>
+    </div>
+    <!-- Education -->
+    <div>
+      <div class="exp-col-title reveal" style="transition-delay:0.2s"><i class="fas fa-graduation-cap"></i> Education</div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2008-2017</div>
+          <h4>Junior School Eduction</h4>
+          <h5>Happy Home English School,Sharjah UAE</h5>
+          <h5>Radiant School,Sharjah UAE (CBSE)</h5>
+          
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2019-2022</div>
+          <h4>Higher Secondary Eduction</h4>
+          <h5>Al Amaal English High School,Sharjah UAE (FBISE)</h5>
+          
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2023-Present</div>
+          <h4>BSc (Hons) Creative Computing</h4>
+          <h5>Bath Spa University,Rak UAE (UK curriculum)</h5>
+          <p>focusing on the integration of technology, creativity, and digital innovation.
+Developing skills in web development, digital design, interactive systems, and emerging technologies.</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     CERTIFICATES
+══════════════════════════════════════ -->
+<section id="certificates">
+  <div class="reveal">
+    <div class="section-tag">Credentials</div>
+    <h2 class="section-title">Certificates &amp; <em>Achievements</em></h2>
+    <div class="section-divider"></div>
+    <p style="color:var(--text-muted);max-width:520px;font-size:0.92rem;line-height:1.85;margin-bottom:3.5rem;">
+      Verified credentials from globally recognised platforms — each one representing skills actively applied in real projects.
+    </p>
+  </div>
+  <div class="cert-grid">
+ 
+    <!-- 1 · Sololearn -->
+    <div class="cert-card reveal" style="transition-delay:0s">
+      <div class="cert-ribbon"></div>
+      <div class="cert-icon-wrap cert-iw-google">
+        <img src="images/logo 1.png" alt="certificate 1">
+        <i class="fab fa-google cert-icon"></i>
+        <div class="cert-badge-stamp"><i class="fas fa-certificate"></i></div>
+      </div>
+      <div class="cert-body">
+        <div class="cert-issued">Issued · 2024</div>
+        <h3>Python Intermediate</h3>
+        <p class="cert-issuer"><i class="fab fa-python"></i> Sololearn</p>
+        <p class="cert-desc">Intermediate-level Python training covering functions, lists, dictionaries, and practical coding skills.</p>
+        <div class="cert-skills">
+          <span>Python</span><span>VS code</span><span>Advance function</span><span>Data Structure</span>
+        </div>
+      </div>
+      <a href="4.pdf" class="cert-verify-btn"><i class="fas fa-external-link-alt"></i> Verify Certificate</a>
+    </div>
+
+    <!-- 2· Sololearn -->
+    <div class="cert-card reveal" style="transition-delay:0s">
+      <div class="cert-ribbon"></div>
+      <div class="cert-icon-wrap cert-iw-google">
+        <img src="images/logo 1.png" alt="certificate 1">
+        <i class="fab fa-google cert-icon"></i>
+        <div class="cert-badge-stamp"><i class="fas fa-certificate"></i></div>
+      </div>
+      <div class="cert-body">
+        <div class="cert-issued">Issued · 2024</div>
+        <h3>Introction to CSS</h3>
+        <p class="cert-issuer"><i class="fab fa-css3-alt"></i> Sololearn</p>
+        <p class="cert-desc">Introduction to CSS covering selectors, box model, and modern layout techniques.</p>
+        <div class="cert-skills">
+          <span>CSS</span><span>Flexbox</span><span>Responsive Design</span><span>UI Styling</span>
+        </div>
+      </div>
+      <a href="1.pdf" class="cert-verify-btn"><i class="fas fa-external-link-alt"></i> Verify Certificate</a>
+    </div>
+
+    <!-- 3 ·Kaggle -->
+    <div class="cert-card reveal" style="transition-delay:0s">
+      <div class="cert-ribbon"></div>
+      <div class="cert-icon-wrap cert-iw-google">
+        <img src="images/logo 2.png" alt="certificate 1">
+        <i class="fab fa-google cert-icon"></i>
+        <div class="cert-badge-stamp"><i class="fas fa-certificate"></i></div>
+      </div>
+      <div class="cert-body">
+        <div class="cert-issued">Issued · 2024</div>
+        <h3>Intro to Machine Learning</h3>
+        <p class="cert-issuer"><i class="fab fa-kaggle"></i> Kaggle</p>
+        <p class="cert-desc">Learned basic machine learning techniques using data analysis and predictive models.</p>
+        <div class="cert-skills">
+          <span>Machine Learning</span><span>Python</span><span>Pandas</span><span>Model Training</span>
+        </div>
+      </div>
+      <a href="3.pdf" class="cert-verify-btn"><i class="fas fa-external-link-alt"></i> Verify Certificate</a>
+    </div>
+
+    <!-- 4 · Sololearn -->
+    <div class="cert-card reveal" style="transition-delay:0s">
+      <div class="cert-ribbon"></div>
+      <div class="cert-icon-wrap cert-iw-google">
+        <img src="images/logo 1.png" alt="certificate 1">
+        <i class="fab fa-google cert-icon"></i>
+        <div class="cert-badge-stamp"><i class="fas fa-certificate"></i></div>
+      </div>
+      <div class="cert-body">
+        <div class="cert-issued">Issued · 2024</div>
+        <h3>Introduction to HTML</h3>
+        <p class="cert-issuer"><i class="fab fa-html5"></i> Sololearn</p>
+        <p class="cert-desc">Introduction to HTML covering page structure, semantic elements, links, images, and forms.</p>
+        <div class="cert-skills">
+          <span>HTML</span><span>Semantic Tags</span><span>Forms</span><span>Page Structure</span>
+        </div>
+      </div>
+      <a href="2.pdf" class="cert-verify-btn"><i class="fas fa-external-link-alt"></i> Verify Certificate</a>
+    </div>
+ 
+  
+ 
+    </dv>
+  </section>
+
+<!-- ══════════════════════════════════════
+     PORTFOLIO
+══════════════════════════════════════ -->
+<section id="portfolio">
+  <div class="reveal">
+    <div class="section-tag">My Work</div>
+    <h2 class="section-title">Featured <em>Projects</em></h2>
+    <div class="section-divider" style="background:linear-gradient(to right,var(--accent),transparent)"></div>
+  </div>
+  <div class="portfolio-filter reveal">
+    <button class="filter-btn active" onclick="filterPortfolio('all', this)">All</button>
+    <button class="filter-btn" onclick="filterPortfolio('web', this)">Web Development </button>
+    <button class="filter-btn" onclick="filterPortfolio('design', this)">UI/UX Design</button>
+    <button class="filter-btn" onclick="filterPortfolio('app', this)">Mobile App</button>
+    <button class="filter-btn" onclick="filterPortfolio('game', this)">2D Game</button>
+  </div>
+  <div class="portfolio-grid" id="portfolioGrid">
+    <div class="portfolio-card reveal" data-cat="web">
+      <div class="portfolio-card-bg pc-1">
+        <img src="images/img 1.png" alt="">
+      </div>
+      <div class="portfolio-card-overlay">
+        <div class="portfolio-card-cat">Web Development</div>
+        <h3>Henna personal webiste </h3>
+        <p>Developed a full-stack henna/mehndi website with dynamic features, responsive design, and seamless user interaction.</p>
+        <a href="https://aanchalkhan.github.io/" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="portfolio-card reveal" data-cat="design" style="transition-delay:0.1s">
+      <div class="portfolio-card-bg pc-2">
+        <img src="images/img 2.png" alt="">
+      </div>
+      <div class="portfolio-card-overlay">
+        <div class="portfolio-card-cat">UI/UX design</div>
+        <h3>Food Recipe app</h3>
+        <p>Mobile-first recipe app with intuitive UI/UX, featuring visually engaging layouts and seamless user navigation.</p>
+        <a href="https://www.figma.com/proto/k3G2ONxh5GNAbjYXaqhVsX/Food-Recipe-App?node-id=38-25&p=f&t=aFLuhhdnyn3Lpji0-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=38%3A20" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="portfolio-card reveal" data-cat="app" style="transition-delay:0.2s">
+      <div class="portfolio-card-bg pc-3">
+        <img src="images/img 3.png" alt="">
+      </div>
+      <div class="portfolio-card-overlay">
+        <div class="portfolio-card-cat">Mobile app</div>
+        <h3>Cup Cake maker</h3>
+        <p>Designed and developed a Cupcake Maker Android app with intuitive UI, splash screen, and interactive flavor–topping fusion system.</p>
+        <a href="https://github.com/AANCHALKHAN/cupcakemaker3" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="portfolio-card reveal" data-cat="web" style="transition-delay:0.1s">
+      <div class="portfolio-card-bg pc-4">
+        <img src="images/img 4.png" alt="">
+      </div>
+      <div class="portfolio-card-overlay">
+        <div class="portfolio-card-cat">Web Development</div>
+        <h3>Coffee shop website</h3>
+        <p>Developed a responsive coffee shop website in VS Code using HTML, CSS, and JavaScript, featuring modern UI and smooth navigation.</p>
+        <a href="#" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="portfolio-card reveal" data-cat="design" style="transition-delay:0.2s">
+      <div class="portfolio-card-bg pc-5">
+        <img src="images/img 5.png" alt="">
+      </div>
+      <div class="portfolio-card-overlay">
+        <div class="portfolio-card-cat">UI/UX Design</div>
+        <h3>Designing A website for University</h3>
+        <p>Interactive learning platform UI with gamification elements and progress tracking dashboards.</p>
+        <a href="https://www.figma.com/proto/69mWa6dlkyUM8I86acbVar/Bathspa-university-website?node-id=1-2&p=f&t=LhRpffIQhBjeJXaP-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="portfolio-card reveal" data-cat="app" style="transition-delay:0.3s">
+      <div class="portfolio-card-bg pc-6">
+        <img src="images/img 6.png" alt="">
+      </div>
+      <div class="portfolio-card-overlay">
+        <div class="portfolio-card-cat">Mobile app</div>
+        <h3>Coffee ordering App</h3>
+        <p>End-to-end design and development of a coffee ordering app in Android Studio — covering splash screen, product selection, quantity controls, and order summary.</p>
+        <a href="https://github.com/AANCHALKHAN/CoffeeOrderingApp" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="portfolio-card reveal" data-cat="game" style="transition-delay:0.3s">
+      <div class="portfolio-card-bg pc-6">
+        <img src="images/img 7.png" alt="">
+      </div>
+      <div class="portfolio-card-overlay">
+        <div class="portfolio-card-cat">2d Game</div>
+        <h3>2d Game</h3>
+        <p>Complete 2D game development — including main menu, multiple levels, interactive character controls, obstacles, and collectible items./p>
+        <a href="https://www.youtube.com/watch?v=AOO-xxLxjfc" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     CV DOWNLOAD BANNER
+══════════════════════════════════════ -->
+<div class="cv-banner reveal">
+  <h2>Download My CV</h2>
+  <p>Get a full overview of my skills, experience, and education in one document.</p>
+  <a href="" class="btn-dl" onclick="downloadCV(event)">
+    <i class="fas fa-download"></i> Download CV (PDF)
+  </a>
+</div>
+
+<!-- ══════════════════════════════════════
+     CONTACT
+══════════════════════════════════════ -->
+<section id="contact">
+  <div class="contact-grid">
+    <div class="reveal-left">
+      <div class="section-tag">Get In Touch</div>
+      <h2 class="section-title">Let's Work <em>Together</em></h2>
+      <div class="section-divider"></div>
+      <p style="color:var(--text-muted);line-height:1.9;margin-bottom:2rem">Have a project in mind or want to collaborate? I'd love to hear from you. Fill out the form or reach out through any of the channels below.</p>
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+        <div class="contact-item-text">
+          <span>Gmail</span>
+          <a href="mailto:aanchalnasrullah5@gmail.com">aanchalnasrullah5@gmail.com</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+        <div class="contact-item-text">
+          <span>Phone</span>
+          <strong>+971-588998669</strong>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="contact-item-text">
+          <span>Location</span>
+          <strong>Sharjah,UAE</strong>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="https://www.youtube.com/@AanchalNasrullah" class="social-link"><i class="fa fa-youtube-play"></i></a>
+        <a href="https://github.com/AANCHALKHAN" class="social-link"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="reveal-right">
+      <div class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" id="fname" placeholder="John Doe">
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" id="femail" placeholder="john@email.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <select id="fsubject">
+            <option value="">Select a subject</option>
+            <option>Web Design Project</option>
+            <option>Development Work</option>
+            <option>Brand Identity</option>
+            <option>Collaboration</option>
+            <option>General Inquiry</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea id="fmessage" placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button class="btn-submit" onclick="handleSubmit()">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+<footer>
+  <div class="foot-logo">A<span>.</span>anchal</div>
+  <p>© 2025 Aanchal. Crafted with ♥ for university assignment.</p>
+  <div class="foot-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#portfolio">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
