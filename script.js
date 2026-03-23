@@ -92,7 +92,7 @@ function showToast(msg, type = 'success') {
 function downloadCV(e) {
   e.preventDefault();
   showToast('CV download started!');
-  // In production: window.open('aanchal-cv.pdf', '_blank');
+  // In production: window.open('Aanchal_CV.pdf', '_blank');
 }
 
 /* ── ACTIVE NAV HIGHLIGHT ON SCROLL ── */
@@ -110,3 +110,15 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+function downloadCV(event) {
+  event.preventDefault(); // prevent default link behavior
+  const link = event.currentTarget;
+  const url = link.getAttribute('href');
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = url.split('/').pop();
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
